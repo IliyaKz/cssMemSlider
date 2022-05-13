@@ -10,8 +10,8 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    padding: 3vh 0;
     box-sizing: border-box;
-    padding: 3vh;
     display: flex;
     flex-direction: column;
     row-gap: 5vh;
@@ -34,7 +34,7 @@ input[name="slide"] {
     transform: translateX(0);
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
+    transition: all 0.6s;
 }
 .meme-img {
     max-width: 100%;
@@ -42,6 +42,7 @@ input[name="slide"] {
 }
 .bottom-panel {
     display: flex;
+    padding: 0 3vh;
 }
 .captions-container {
     overflow: hidden;
@@ -54,18 +55,16 @@ input[name="slide"] {
     min-width: 100%;
     display: flex;
     align-items: center;
-    transition: all 0.5s;
+    transition: all 0.6s;
     transform: translateX(0);
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.06rem;
     color: #3a7059;
-    margin-left: 0.3rem;
 }
 .controls-container {
     display: flex;
-    justify-content: space-between;
 }
 .control {
     padding: 1rem;
@@ -139,4 +138,17 @@ input[name="slide"] {
 #slide4:checked ~ .bottom-panel .captions-container .caption:nth-child(4) {
     color: #43e898;
     text-shadow: 0 0 0.2rem #90e09d;
+}
+@media screen and (max-width: 540px), screen and (max-height: 600px) {
+    .bottom-panel {
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+    .captions-container {
+        order: 2;
+        width: 100%;
+    }
+    .controls-container {
+        align-self: center;
+    }
 }
