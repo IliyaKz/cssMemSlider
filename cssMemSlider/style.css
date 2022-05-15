@@ -83,20 +83,22 @@ input[name="slide"] {
     border: 0.15rem solid #38f558;
 }
 .control:active .marker {
+    border: 0.15rem solid #38f558;
     box-shadow: 0 0 0.9rem 0.3rem #48856b, 0 0 0.7rem 0.2rem #43e898, 0 0 0.5rem 0.1rem #adffbb;
 }
 #slide1:checked ~ .bottom-panel .controls-container .control .marker-1,
 #slide2:checked ~ .bottom-panel .controls-container .control .marker-2,
 #slide3:checked ~ .bottom-panel .controls-container .control .marker-3,
 #slide4:checked ~ .bottom-panel .controls-container .control .marker-4 {
-    background-color: #90e09d;
+    background-color: #d2fcea;
     box-shadow: 0 0 0.2rem 0.1rem #51917a;
 }
 #slide1:checked ~ .bottom-panel .controls-container .control:active .marker-1,
 #slide2:checked ~ .bottom-panel .controls-container .control:active .marker-2,
 #slide3:checked ~ .bottom-panel .controls-container .control:active .marker-3,
 #slide4:checked ~ .bottom-panel .controls-container .control:active .marker-4 {
-    background-color: #90e09d;
+    background-color: #d2fcea;
+    border: 0.15rem solid #38f558;
     box-shadow: 0 0 0.9rem 0.3rem #48856b, 0 0 0.7rem 0.2rem #43e898, 0 0 0.5rem 0.1rem #adffbb;
 }
 #slide1:checked ~ .meme-slider .meme-container {
@@ -123,21 +125,12 @@ input[name="slide"] {
 #slide4:checked ~ .bottom-panel .captions-container .caption {
     transform: translateX(-300%);
 }
-#slide1:checked ~ .bottom-panel .captions-container .caption:nth-child(1) {
-    color: #43e898;
-    text-shadow: 0 0 0.2rem #90e09d;
-}
-#slide2:checked ~ .bottom-panel .captions-container .caption:nth-child(2) {
-    color: #43e898;
-    text-shadow: 0 0 0.2rem #90e09d;
-}
-#slide3:checked ~ .bottom-panel .captions-container .caption:nth-child(3) {
-    color: #43e898;
-    text-shadow: 0 0 0.2rem #90e09d;
-}
+#slide1:checked ~ .bottom-panel .captions-container .caption:nth-child(1),
+#slide2:checked ~ .bottom-panel .captions-container .caption:nth-child(2),
+#slide3:checked ~ .bottom-panel .captions-container .caption:nth-child(3),
 #slide4:checked ~ .bottom-panel .captions-container .caption:nth-child(4) {
     color: #43e898;
-    text-shadow: 0 0 0.2rem #90e09d;
+    text-shadow: 0 0 0.1rem #90e09d;
 }
 @media screen and (max-width: 540px), screen and (max-height: 600px) {
     .bottom-panel {
