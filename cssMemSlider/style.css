@@ -132,7 +132,7 @@ input[name="slide"] {
     color: #43e898;
     text-shadow: 0 0 0.1rem #90e09d;
 }
-@media screen and (max-width: 540px), screen and (max-height: 600px) {
+@media screen and (max-width: 540px) {
     .bottom-panel {
         flex-direction: column;
         row-gap: 5vh;
